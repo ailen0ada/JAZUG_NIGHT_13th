@@ -9,6 +9,7 @@
 @title[Topics to Explore Today]
 
 ### @fa[bullseye] Topics to Explore Today
+
 1. What Xamarin.Forms brings us or not
 2. Constructing apps without templates
 3. Recommended usage
