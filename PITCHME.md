@@ -28,6 +28,38 @@ Create one UI @color[orange](per platform)
 ### @fa[cogs] From empty project
 It helps you to understand what's going on
 
+---?code=assets/first_step_codes/JAZUG.Sample/JAZUG.Sample.Core/App.cs&lang=csharp&title=Core.App
+
+@[2](add namespace)
+@[6](derives from Xamarin.Forms.Application)
+@[10-11](specify your content as MainPage)
+
+---?code=assets/first_step_codes/JAZUG.Sample/JAZUG.Sample.Mac/AppDelegate.cs&lang=csharp&title=Mac.AppDelegate
+
+@[3-5](add namespace)
+@[9-10](derives from FormsApplicationDelegate)
+@[12-22](instantiate main window)
+@[24-29](initialize Core.App and launch)
+
+---?code=assets/first_step_codes/JAZUG.Sample/JAZUG.Sample.Mac/Main.cs&lang=csharp&title=Mac.Main
+
+@[10](register our AppDelegate as Delegate of SharedApplication)
+
+---?code=assets/first_step_codes/JAZUG.Sample/JAZUG.Sample.Wpf/MainWindow.xaml&lang=xml&title=Wpf.MainWindow
+
+@[1,5](derived from FormsApplicationPage)
+
+---?code=assets/first_step_codes/JAZUG.Sample/JAZUG.Sample.Wpf/MainWindow.xaml.cs&lang=csharp&title=Wpf.MainWindow
+
+@[15,16,23](derived from FormsApplicationPage)
+@[27-29](initialize Core.App and load it)
+
+---?code=assets/first_step_codes/JAZUG.Sample/JAZUG.Sample.Gtk/Program.cs&lang=csharp&title=GtkSharp.Program
+
+@[3-4](add namespace)
+@[13,14,21](GTKSharp application cycle)
+@[16-19](instantiate FormsWindow and load Core.App)
+
 ---
 @title[Demo]
 
