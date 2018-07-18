@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" x:Class="JAZUG.Sample.Core.MainPage">
+    <ContentPage.Content>
+        <StackLayout Orientation="Vertical">
+            <Image x:Name="ImageView" VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand" />
+            <StackLayout Orientation="Horizontal" Padding="20" VerticalOptions="End" HorizontalOptions="FillAndExpand">
+                <Label x:Name="PathLabel" Text="Welcome to Xamarin Forms!" HorizontalOptions="StartAndExpand" />
+                <Button Clicked="Handle_Clicked" Text="Pick image..." HorizontalOptions="End" />
+            </StackLayout>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
