@@ -61,6 +61,30 @@ It helps you to understand what's going on
 @[16-19](instantiate FormsWindow and load Core.App)
 
 ---
+@title[DependencyService]
+
+### @fa[cogs] DependencyService
+Allows apps to call into platform-specific functionality from shared code
+
+1. Define interface
+2. Implementation per platform
+3. Registration
+4. Ask for implementations
+
+---?code=assets/second_step_codes/JAZUG.Sample/JAZUG.Sample.Core/IFileSelector.cs&lang=csharp&title=Define interface
+
+@[5-8](single file selection)
+
+---?code=assets/second_step_codes/JAZUG.Sample/JAZUG.Sample.Core/MainPage.xaml.cs&lang=csharp&title=Ask for implementation
+
+@[17-18](Ask for implementation and calling method)
+
+---?code=assets/second_step_codes/JAZUG.Sample/JAZUG.Sample.Mac/NativeFileSelector.cs&lang=csharp&title=NativeFileSelector.Mac
+
+@[11](derived from IFileSelector)
+@[8](register per namespace)
+
+---
 @title[Demo]
 
 ### @fa[history] What I did
